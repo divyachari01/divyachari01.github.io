@@ -3,7 +3,7 @@ title: "Teaching Assistant"
 collection: teaching
 type: "PHYS 131: Introductory Physics and PHYS 118: Electricity, Light and Radiation"
 venue: "University of British Columbia, Department of Physics and Astronomy"
-date: 2021
+date: 01-01-2021
 location: "Vancouver, BC, Canada"
 ---
 
