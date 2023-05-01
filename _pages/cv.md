@@ -21,20 +21,20 @@ Work experience
   * Principal Investigators: Dr. Meigan Aronson (Dean of the faculty of Science at UBC)
                              Dr. Alannah Hallas (Assistant Professor in the department of Physics at UBC)
   * Research project studying the magnetic ordering and electric properties of novel intermetallic Kagome compounds such as Sc3Fe3Al7Si5
-  • Intermetallic Quantum Material Synthesis: Flux growth, arc melting, and solid-state synthesis.
-  • Measurement Systems: X-Ray Diffraction (XRD), magnetic property measurement system (MPMS), physical properties
-  measurement system (PPMS), energy dispersive x-ray spectroscopy (EDS).
-  • Data Analysis: Rietveld refinement of XRD data, fitting of large scale MPMS data using Python and Jupyter Notebooks, determining
-  the structural composition of crystals using EDS data.
+   - Intermetallic Quantum Material Synthesis: Flux growth, arc melting, and solid-state synthesis.
+   - Measurement Systems: X-Ray Diffraction (XRD), magnetic property measurement system (MPMS), physical properties
+      measurement system (PPMS), energy dispersive x-ray spectroscopy (EDS).
+   - Data Analysis: Rietveld refinement of XRD data, fitting of large scale MPMS data using Python and Jupyter Notebooks, determining
+      the structural composition of crystals using EDS data.
 
 * Fall 2022 - Winter 2023: Undergraduate Honours Thesis
   * University of British Columbia
   * Thesis Supervisor: Dr. Roman Krems (Professor in the Department of Chemistry at UBC)
   * Machine learning for Hubbard model simulator experimental design
-  • Monte Carlo method to solve parametric curves
-  • Realistic 𝒕 ,𝑼 calculation varying voltages, size and distance between quantum dots, and shapes of gates
-  • Support vector machine classifier to identify the correct voltages
-  • Gaussian processes and Multi-objective Bayesian optimization to define black box function
+   - Monte Carlo method to solve parametric curves
+   - Realistic 𝒕 ,𝑼 calculation varying voltages, size and distance between quantum dots, and shapes of gates
+   - Support vector machine classifier to identify the correct voltages
+   - Gaussian processes and Multi-objective Bayesian optimization to define black box function
   
 Skills
 ======
