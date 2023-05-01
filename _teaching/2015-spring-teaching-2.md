@@ -1,20 +1,12 @@
 ---
-title: "Teaching experience 2"
+title: "Teaching Assistant"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "PHYS 219: Intermediate Experimental Physics I"
+venue: "University of British Columbia, Department of Physics and Astronomy"
+date: 2022
+location: "Vancouver, BC, Canada"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Introduced students to analog electronics, amplifiers, digital electronics, breadboards. Helped them with analysis of experimental data using
+Python. Saw a significant improvement in their understanding of circuits to the point where they built their own AM radio receiver comfortably.
+Saw an improvement in their lab reports as well.
