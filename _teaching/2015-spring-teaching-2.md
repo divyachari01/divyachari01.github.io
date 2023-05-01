@@ -3,7 +3,7 @@ title: "Teaching Assistant"
 collection: teaching
 type: "PHYS 219: Intermediate Experimental Physics I"
 venue: "University of British Columbia, Department of Physics and Astronomy"
-date: 2022
+date: 2022-01-01
 location: "Vancouver, BC, Canada"
 ---
 
