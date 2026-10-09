@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divya Chari | Physics PhD Candidate, Ohio State</title>
+  <meta name="description" content="Divya Chari is a physics PhD candidate at The Ohio State University working on atomic opacities for the Sun and other stars.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='34' fill='%23ffb52e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Divya Chari</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Physics PhD candidate · The Ohio State University</p>
+      <h1>Divya Chari</h1>
+      <p class="lead">I study how light travels through the Sun and other stars, one atomic cross section at a time.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#research">See my research</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="sun-wrap" aria-hidden="true">
+      <div class="rays"></div>
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of the Sun">
+        <defs>
+          <radialGradient id="corona" cx="50%" cy="50%" r="50%">
+            <stop offset="55%" stop-color="#ffb52e" stop-opacity="0.55"/>
+            <stop offset="75%" stop-color="#ff7a1a" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="disc" cx="40%" cy="38%" r="70%">
+            <stop offset="0%" stop-color="#fff6c2"/>
+            <stop offset="35%" stop-color="#ffc233"/>
+            <stop offset="75%" stop-color="#ff8a1f"/>
+            <stop offset="100%" stop-color="#d9480f"/>
+          </radialGradient>
+          <clipPath id="clip"><circle cx="200" cy="200" r="118"/></clipPath>
+          <filter id="granulation" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="7"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.12  0 0 0 0 0  0 0 0 1.4 -0.4"/>
+          </filter>
+        </defs>
+        <circle class="corona" cx="200" cy="200" r="195" fill="url(#corona)"/>
+        <g clip-path="url(#clip)">
+          <circle cx="200" cy="200" r="118" fill="url(#disc)"/>
+          <rect class="granules" x="60" y="60" width="280" height="280" filter="url(#granulation)" opacity="0.55"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div>
+        <p class="quote">“We are all made from stardust.” At six, I reasoned that if that were true, I must have magical properties. I'm still chasing the explanation, except now it comes with quantum mechanics and a lot of Fortran.</p>
+        <p>I'm a PhD candidate in physics at The Ohio State University, based in the Department of Astronomy and the Center for Cosmology and AstroParticle Physics (CCAPP). I work with Prof. Anil K. Pradhan and Prof. Sultana N. Nahar as part of the R-Matrix Opacity Project (RMOP).</p>
+        <p>I started in astronomy at UBC, spent several years in condensed matter labs growing and measuring quantum materials, and did my honours thesis using machine learning to simulate the Hubbard model. Then I found my way back to the stars.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Now</span>PhD candidate in Physics, Ohio State</li>
+        <li><span>2026</span>M.S. in Physics, Ohio State</li>
+        <li><span>2023</span>BSc Honours, Physics and Astronomy, UBC</li>
+        <li><span>Tools</span>Fortran, Python, C++</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p class="intro">Opacity is how strongly a hot, dense plasma absorbs light, and it controls how energy gets out of a star. The light you see left the Sun's surface about eight minutes ago, but the energy in it may have spent tens of thousands of years working its way out of the core. Opacity is what makes that trip so slow, and I compute the atomic data behind it.</p>
+    <div class="cards">
+      <article class="card">
+        <h3>R-matrix calculations</h3>
+        <p>Large-scale Breit-Pauli R-matrix (BPRM) calculations give photoabsorption cross sections with their full resonance structure and fine structure.</p>
+      </article>
+      <article class="card">
+        <h3>Plasma effects</h3>
+        <p>Electron collisions, ion microfields and thermal motion broaden and smear atomic resonances. I study how this changes cross sections and opacity spectra across temperature and density.</p>
+      </article>
+      <article class="card">
+        <h3>Opacity and equation of state</h3>
+        <p>Building opacities for stellar mixtures and comparing them with equation-of-state results.</p>
+      </article>
+      <article class="card">
+        <h3>Why it matters</h3>
+        <p>The solar opacity problem, helioseismology, and high-energy-density plasma experiments in the lab.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ol class="pubs">
+      <li>
+        <p class="pub-title">R-matrix calculations for opacities: V. Temperature-density dependence of photoabsorption cross sections and opacity spectra of oxygen ions O VI and O VII</p>
+        <p class="pub-meta"><strong>D. Chari</strong>, S. N. Nahar and A. K. Pradhan. <em>Journal of Physics B</em> 59, 145003 (2026).</p>
+        <p class="pub-links"><a href="https://doi.org/10.1088/1361-6455/ae8c98">DOI</a> <a href="https://arxiv.org/abs/2609.07649">arXiv</a></p>
+      </li>
+    </ol>
+
+    <h3 class="sub">Talks</h3>
+    <ul class="talks">
+      <li><span>2026</span>APS Division of Atomic, Molecular and Optical Physics (DAMOP), oral presentation</li>
+      <li><span>2026</span>ICMMS VIII, oral presentation</li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="talks">
+      <li><span>Autumn 2026</span>Grader, PHYS 5500 Quantum Mechanics, Ohio State</li>
+      <li><span>Earlier</span>Teaching assistant, PHYS 1201, Ohio State</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="intro">Happy to talk about atomic physics, opacities, or what stars are made of.</p>
+    <div class="buttons">
+      <a class="btn primary" href="mailto:divyachari01@gmail.com">Email me</a>
+      <a class="btn" href="files/Divya_Chari_CV.pdf">Download CV</a>
+      <a class="btn" href="https://github.com/divyachari01">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/divya-chari-13325914a">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Divya Chari. Made with stardust and a little CSS.</p>
+</footer>
+
+</body>
+</html>
