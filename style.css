@@ -226,3 +226,14 @@ footer { text-align: center; color: var(--muted); padding: 64px 24px 40px; font-
   .nav nav { gap: 12px; }
   .nav nav a { font-size: 0.85rem; }
 }
+
+/* photos */
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 1.5px solid var(--sun); }
+.portrait { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 18%; border-radius: 16px; border: 1px solid var(--line); margin-bottom: 16px; box-shadow: 0 0 40px rgba(255, 150, 30, 0.2); }
+.talks.media li { display: flex; gap: 18px; align-items: center; }
+.talks.media img { width: 120px; height: 120px; object-fit: cover; object-position: center 25%; border-radius: 12px; border: 1px solid var(--line); flex: none; }
+.talks.media li.nophoto { padding-left: 0; }
+@media (max-width: 760px) { .talks.media img { width: 84px; height: 84px; } }
+.talks.media img.wide { width: 240px; object-position: 75% 50%; }
+@media (max-width: 760px) { .talks.media img.wide { width: 150px; } }
