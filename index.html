@@ -87,23 +87,24 @@
 
   <section id="research">
     <h2>Research</h2>
-    <p class="intro">Opacity is how strongly a hot, dense plasma absorbs light, and it controls how energy gets out of a star. The light you see left the Sun's surface about eight minutes ago, but the energy in it may have spent tens of thousands of years working its way out of the core. Opacity is what makes that trip so slow, and I compute the atomic data behind it.</p>
-    <div class="cards">
+    <p class="intro">I work on the atomic physics behind stellar and laboratory opacities. Opacity sets how fast radiation carries energy through a hot, dense plasma, so errors in the atomic data change the temperature structure of a star. The light you see left the Sun's surface about eight minutes ago, but the energy in it may have spent tens of thousands of years working its way out of the core. My work is part of the R-Matrix Opacity Project (RMOP), which revisits the original Opacity Project calculations with larger and more complete atomic models.</p>
+    <p class="intro">The motivation is the solar opacity problem. Solar models built with updated chemical abundances disagree with helioseismology, and laboratory opacity measurements at facilities such as Sandia's Z machine have found higher opacities than theory predicts for some elements. Better atomic data is one way to test whether the theory is the problem.</p>
+    <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));">
       <article class="card">
-        <h3>R-matrix calculations</h3>
-        <p>Large-scale Breit-Pauli R-matrix (BPRM) calculations give photoabsorption cross sections with their full resonance structure and fine structure.</p>
+        <h3>Breit-Pauli R-matrix calculations</h3>
+        <p>I compute photoionization and photoabsorption cross sections with the Breit-Pauli R-matrix (BPRM) method, using close-coupling expansions with many target states and relativistic fine structure. These calculations resolve the dense series of autoionizing resonances and cover wide photon-energy ranges, structure that is often missing or truncated in earlier opacity data.</p>
       </article>
       <article class="card">
-        <h3>Plasma effects</h3>
-        <p>Electron collisions, ion microfields and thermal motion broaden and smear atomic resonances. I study how this changes cross sections and opacity spectra across temperature and density.</p>
+        <h3>Plasma broadening</h3>
+        <p>Resonances in a real plasma are not sharp. I apply a post-processing treatment for the broadening of autoionizing resonances by electron collisions, ion microfields (Stark), thermal Doppler motion and free-free transitions, convolved with the cross sections at each temperature and electron density. This maps out where broadening starts to matter and where resonances dissolve into the continuum.</p>
       </article>
       <article class="card">
         <h3>Opacity and equation of state</h3>
-        <p>Building opacities for stellar mixtures and comparing them with equation-of-state results.</p>
+        <p>The broadened cross sections feed monochromatic and Rosseland mean opacities on temperature-density grids, for single elements and for full stellar mixtures, at conditions found at the base of the solar convection zone and in laboratory experiments. I compare the results with Opacity Project data, and with equation-of-state results in collaboration with an outside group, since both depend on the same plasma conditions.</p>
       </article>
       <article class="card">
-        <h3>Why it matters</h3>
-        <p>The solar opacity problem, helioseismology, and high-energy-density plasma experiments in the lab.</p>
+        <h3>Computation and tools</h3>
+        <p>The calculations are large Fortran codes run on high-performance computing clusters, with Python for analysis and automation. I also develop <a href="#code">ssopt</a>, a package that automates atomic structure calculations with the SUPERSTRUCTURE code, so that the atomic data feeding these opacities can be produced reproducibly for any ion.</p>
       </article>
     </div>
   </section>
@@ -113,8 +114,8 @@
     <div class="cards">
       <article class="card">
         <h3>ssopt</h3>
-        <p>A Python package that automates atomic structure calculations with the SUPERSTRUCTURE code. Given the name of an ion, it builds the configuration list from NIST data and tunes the scaling parameters against NIST energy levels using a surrogate model. It then checks transition rates against NIST and NORAD and exports tables in NORAD format. No hard-coded settings for individual ions, so it works for any ion.</p>
-        <p class="pub-meta">By D. Chari, S. N. Nahar and A. K. Pradhan. Python, Fortran, Slurm.</p>
+        <p>A Python package that automates atomic structure calculations with the SUPERSTRUCTURE code. Given the name of an ion, it builds the configuration list from NIST level data, limited by orbital caps (n up to 4 and l up to 3 by default), plus physics rules for electron correlation, then tunes the scaling parameters against NIST energy levels using a surrogate model. It then checks transition rates against NIST and NORAD and exports tables in NORAD format. No hard-coded settings for individual ions, so it works for any ion.</p>
+        <p class="pub-meta">By D. Chari, S. N. Nahar and A. K. Pradhan. Python, Fortran, Slurm. License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
         <p class="pub-links"><a href="https://github.com/divyachari01/ssopt">View on GitHub</a></p>
       </article>
     </div>
@@ -142,8 +143,8 @@
   <section id="teaching">
     <h2>Teaching</h2>
     <ul class="talks">
-      <li><span>Autumn 2026</span>Grader, PHYS 5500 Quantum Mechanics, Ohio State</li>
-      <li><span>Earlier</span>Teaching assistant, PHYS 1201, Ohio State</li>
+      <li><span>2023 to present</span>Teaching assistant and grader, The Ohio State University. PHYS 1200 and 1201 (introductory physics), 5500 and 5501 (undergraduate quantum mechanics) and 7502 (graduate quantum mechanics), with duties (lab and recitation teaching, grading) varying by semester</li>
+      <li><span>2021 to 2023</span>Teaching assistant, University of British Columbia</li>
     </ul>
   </section>
 
@@ -153,7 +154,7 @@
     <div class="buttons">
       <a class="btn primary" href="mailto:chari.16@osu.edu">OSU email</a>
       <a class="btn" href="mailto:divyachari01@gmail.com">Personal email</a>
-      <a class="btn" href="files/Divya_Chari_CV.pdf">Download CV</a>
+      <a class="btn" href="files/Divya_Chari_CV.pdf" target="_blank" rel="noopener">View CV</a>
       <a class="btn" href="https://github.com/divyachari01">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/divya-chari-13325914a">LinkedIn</a>
     </div>
