@@ -58,7 +58,7 @@ a:hover { text-decoration: underline; }
   top: 0;
   z-index: 10;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 16px;
   padding: 14px 28px;
@@ -253,3 +253,6 @@ footer { text-align: center; color: var(--muted); padding: 64px 24px 40px; font-
 .card .steps { margin: 12px 0; padding-left: 20px; color: var(--muted); }
 .card .steps li { margin-bottom: 6px; }
 .card p + p { margin-top: 12px; }
+
+.nav nav { justify-content: center; }
+@media (max-width: 760px) { .nav { padding: 12px 8px; } .nav nav { gap: 10px; flex-wrap: nowrap; } .nav nav a { font-size: 0.78rem; } }
