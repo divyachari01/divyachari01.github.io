@@ -249,3 +249,7 @@ footer { text-align: center; color: var(--muted); padding: 64px 24px 40px; font-
 .namerow h1 { margin: 0; }
 .dp { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid var(--sun); box-shadow: 0 0 18px rgba(255, 160, 40, 0.45); flex: none; }
 @media (max-width: 760px) { .dp { width: 56px; height: 56px; } }
+
+.card .steps { margin: 12px 0; padding-left: 20px; color: var(--muted); }
+.card .steps li { margin-bottom: 6px; }
+.card p + p { margin-top: 12px; }

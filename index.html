@@ -115,7 +115,14 @@
     <div class="cards">
       <article class="card">
         <h3>ssopt</h3>
-        <p>A Python package that automates atomic structure calculations with the SUPERSTRUCTURE code. Given the name of an ion, it builds the configuration list from NIST level data, limited by orbital caps (n up to 4 and l up to 3 by default), plus physics rules for electron correlation, then tunes the scaling parameters against NIST energy levels using a surrogate model. It then checks transition rates against NIST and NORAD and exports tables in NORAD format. No hard-coded settings for individual ions, so it works for any ion.</p>
+        <p>A Python package that automates atomic structure calculations with the SUPERSTRUCTURE code. Give it the name of an ion and it runs the full workflow:</p>
+        <ul class="steps">
+          <li>Builds the configuration list from NIST level data, with orbital caps (n up to 4 and l up to 3 by default) and physics rules for electron correlation.</li>
+          <li>Tunes the scaling parameters against NIST energy levels using a surrogate model.</li>
+          <li>Checks transition rates against NIST and NORAD.</li>
+          <li>Exports level and transition tables in NORAD format.</li>
+        </ul>
+        <p>There are no hard-coded settings for individual ions, so it works for any ion.</p>
         <p class="pub-meta">By D. Chari, S. N. Nahar and A. K. Pradhan. Python, Fortran, Slurm. License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
         <p class="pub-links"><a href="https://github.com/divyachari01/ssopt">View on GitHub</a></p>
       </article>
