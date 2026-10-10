@@ -71,9 +71,9 @@
     <h2>About</h2>
     <div class="about-grid">
       <div>
-        <p class="quote">“We are all made from stardust.” I heard that as a kid and decided it meant I had magical properties. The real version turned out to be better: the heavy elements around us were forged in stars, and working out how they absorb light is now my job.</p>
-        <p>I'm a PhD candidate in physics at The Ohio State University, based in the Department of Astronomy and the Center for Cosmology and AstroParticle Physics (CCAPP). I work with Prof. Anil K. Pradhan and Prof. Sultana N. Nahar as part of the R-Matrix Opacity Project (RMOP).</p>
-        <p>I started in astronomy at UBC, spent several years in condensed matter labs growing and measuring quantum materials, and did my honours thesis using machine learning to simulate the Hubbard model. Then I found my way back to the stars.</p>
+        <p class="quote">“We are all made from stardust.” I heard that as a kid and decided it meant I had magical properties. The real version turned out to be better. The heavy elements around us were forged in stars. Working out how they absorb light is now my job.</p>
+        <p>I'm a PhD candidate in physics at The Ohio State University. I'm based in the Department of Astronomy and the Center for Cosmology and AstroParticle Physics (CCAPP). I work with Prof. Anil K. Pradhan and Prof. Sultana N. Nahar on the R-Matrix Opacity Project (RMOP).</p>
+        <p>I started in astronomy at UBC. I then spent several years in condensed matter labs, growing and measuring quantum materials. My honours thesis used machine learning to simulate the Hubbard model. Then I found my way back to the stars.</p>
       </div>
       <aside>
       <ul class="facts">
@@ -88,24 +88,25 @@
 
   <section id="research">
     <h2>Research</h2>
-    <p class="intro">I work on the atomic physics behind stellar and laboratory opacities. Opacity sets how fast radiation carries energy through a hot, dense plasma, so errors in the atomic data change the temperature structure of a star. The light you see left the Sun's surface about eight minutes ago, but the energy in it may have spent tens of thousands of years working its way out of the core. My work is part of the R-Matrix Opacity Project (RMOP), which revisits the original Opacity Project calculations with larger and more complete atomic models.</p>
-    <p class="intro">The motivation is the solar opacity problem. Solar models built with updated chemical abundances disagree with helioseismology, and laboratory opacity measurements at facilities such as Sandia's Z machine have found higher opacities than theory predicts for some elements. Better atomic data is one way to test whether the theory is the problem.</p>
+    <p class="intro">I work on the atomic physics behind stellar and laboratory opacities. Opacity sets how fast radiation moves through a hot, dense plasma. Errors in the atomic data change the temperature structure of a star.</p>
+    <p class="intro">The light you see left the Sun about eight minutes ago. The energy in it spent tens of thousands of years leaving the core. My work is part of the R-Matrix Opacity Project (RMOP). It revisits the original Opacity Project calculations with larger and more complete atomic models.</p>
+    <p class="intro">The motivation is the solar opacity problem. Solar models built with updated abundances disagree with helioseismology. Experiments at Sandia's Z machine measured higher opacities than theory predicts for some elements. Better atomic data helps test whether the theory is at fault.</p>
     <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));">
       <article class="card">
         <h3>Breit-Pauli R-matrix calculations</h3>
-        <p>I compute photoionization and photoabsorption cross sections with the Breit-Pauli R-matrix (BPRM) method, using close-coupling expansions with many target states and relativistic fine structure. These calculations resolve the dense series of autoionizing resonances and cover wide photon-energy ranges, structure that is often missing or truncated in earlier opacity data.</p>
+        <p>I compute photoionization cross sections with the Breit-Pauli R-matrix (BPRM) method. The calculations include many target states and relativistic fine structure. They resolve dense series of autoionizing resonances over wide photon-energy ranges. Earlier opacity data often miss this structure.</p>
       </article>
       <article class="card">
         <h3>Plasma broadening</h3>
-        <p>Resonances in a real plasma are not sharp. I apply a post-processing treatment for the broadening of autoionizing resonances by electron collisions, ion microfields (Stark), thermal Doppler motion and free-free transitions, convolved with the cross sections at each temperature and electron density. This maps out where broadening starts to matter and where resonances dissolve into the continuum.</p>
+        <p>Resonances in a real plasma are not sharp. I treat their broadening in post-processing. The treatment includes electron collisions, ion microfields (Stark), Doppler motion and free-free transitions. It is applied at each temperature and electron density. This shows where broadening starts to matter; at high density the resonances dissolve into the continuum.</p>
       </article>
       <article class="card">
         <h3>Opacity and equation of state</h3>
-        <p>The broadened cross sections feed monochromatic and Rosseland mean opacities on temperature-density grids, for single elements and for full stellar mixtures, at conditions found at the base of the solar convection zone and in laboratory experiments. I compare the results with Opacity Project data, and with equation-of-state results in collaboration with an outside group, since both depend on the same plasma conditions.</p>
+        <p>The broadened cross sections give monochromatic and Rosseland mean opacities. I compute them on temperature-density grids for single elements and for stellar mixtures. The conditions match the base of the solar convection zone and laboratory experiments. I compare the results with Opacity Project data. I also compare them with equation-of-state results from an outside group; both depend on the same plasma conditions.</p>
       </article>
       <article class="card">
         <h3>Computation and tools</h3>
-        <p>Much of the work is code: large atomic physics programs run on high-performance computing clusters, with Python for analysis and automation. I also develop <a href="#code">ssopt</a>, a package that automates atomic structure calculations with the SUPERSTRUCTURE code, so that the atomic data feeding these opacities can be produced reproducibly for any ion.</p>
+        <p>Much of the work is code. Large atomic physics programs run on high-performance computing clusters. I use Python for analysis and automation. I also develop <a href="#code">ssopt</a>, a package that automates atomic structure calculations with the SUPERSTRUCTURE code. It produces the atomic data for these opacities reproducibly for any ion.</p>
       </article>
     </div>
   </section>
@@ -152,7 +153,7 @@
   <section id="teaching">
     <h2>Teaching</h2>
     <ul class="talks">
-      <li><span>2023 to present</span>Teaching assistant and grader, The Ohio State University. PHYS 1200 and 1201 (introductory physics), 5500 and 5501 (undergraduate quantum mechanics) and 7502 (graduate quantum mechanics), with duties (lab and recitation teaching, grading) varying by semester</li>
+      <li><span>2023 to present</span>Teaching assistant and grader, The Ohio State University. Courses: PHYS 1200 and 1201 (introductory physics), 5500 and 5501 (undergraduate quantum mechanics) and 7502 (graduate quantum mechanics). Duties vary by semester and include teaching and grading</li>
       <li><span>2021 to 2023</span>Teaching assistant, University of British Columbia</li>
     </ul>
   </section>
