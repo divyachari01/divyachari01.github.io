@@ -115,16 +115,16 @@
     <div class="cards">
       <article class="card">
         <h3>ssopt</h3>
-        <p>A Python package that automates atomic structure calculations with the SUPERSTRUCTURE code. Give it the name of an ion and it runs the full workflow:</p>
+        <p>A Python package that tunes the scaling parameters of the SUPERSTRUCTURE atomic structure code against NIST. Give it the name of an ion and it runs the whole workflow:</p>
         <ul class="steps">
-          <li>Builds the configuration list from NIST level data, with orbital caps (n up to 4 and l up to 3 by default) and physics rules for electron correlation.</li>
-          <li>Tunes the scaling parameters against NIST energy levels using a surrogate model.</li>
-          <li>Checks transition rates against NIST and NORAD.</li>
-          <li>Exports level and transition tables in NORAD format.</li>
+          <li>Builds the configuration list. It starts from every configuration NIST lists, then adds single and paired double excitations from the ground configuration (n up to 4 and l up to 3 by default). The result is larger than NIST's list, and the extra configurations improve the energies through configuration interaction.</li>
+          <li>Tunes the scaling parameters with a surrogate model, so about 300 structure runs are enough to match the NIST energy levels.</li>
+          <li>Runs the full calculation at the tuned values and checks the transition rates against NIST and NORAD.</li>
+          <li>Writes the level and transition tables in NORAD format.</li>
         </ul>
-        <p>There are no hard-coded settings for individual ions, so it works for any ion.</p>
+        <p>Nothing is set per ion. The same settings worked for 96 ions, with a median energy error of about 1% against NIST on an 86-ion test set.</p>
         <p class="pub-meta">By D. Chari, S. N. Nahar and A. K. Pradhan. Python, Fortran, Slurm. License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
-        <p class="pub-links"><a href="https://github.com/divyachari01/ssopt">View on GitHub</a></p>
+        <p class="pub-links"><a href="https://github.com/divyachari01/ssopt">View on GitHub</a> <a href="https://doi.org/10.5281/zenodo.23380595">DOI</a></p>
       </article>
     </div>
   </section>
@@ -152,8 +152,8 @@
   <section id="teaching">
     <h2>Teaching</h2>
     <ul class="talks">
-      <li><span>2023 to present</span>Teaching assistant and grader, The Ohio State University. Courses: PHYS 1200 and 1201 (introductory physics), 5500 and 5501 (undergraduate quantum mechanics) and 7502 (graduate quantum mechanics). Duties vary by semester and include teaching and grading.</li>
-      <li><span>2021 to 2023</span>Teaching assistant, University of British Columbia.</li>
+      <li><span>2023 to present</span>Teaching assistant and grader, The Ohio State University. Courses: PHYS 1200 and 1201 (introductory physics), 5500 and 5501 (undergraduate quantum mechanics) and 7502 (graduate quantum mechanics). Duties vary by semester and include teaching and grading</li>
+      <li><span>2021 to 2023</span>Teaching assistant, University of British Columbia</li>
     </ul>
   </section>
 
